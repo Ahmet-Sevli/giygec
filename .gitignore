@@ -1,0 +1,90 @@
+# ============================================================
+# GiyGeç — .gitignore
+# ============================================================
+
+# ─── 🔐 HASSAS / GİZLİ DOSYALAR (ASLA repoya ekleme!) ───
+*.json
+!pubspec.json
+!analysis_options.json
+!models.json
+*firebase-adminsdk*.json
+google-services.json
+GoogleService-Info.plist
+.env
+.env.*
+secrets/
+*.key
+*.pem
+
+# ─── Python / Server ───
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+.venv/
+ENV/
+dist/
+build/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+.pytest_cache/
+htmlcov/
+.coverage
+*.cover
+.mypy_cache/
+
+# ─── Flutter / Dart ───
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+/build/
+/coverage/
+**/doc/api/
+**/ios/Flutter/.last_build_id
+
+# ─── Derleme Çıktıları ───
+app.*.symbols
+app.*.map.json
+/android/app/debug
+/android/app/profile
+/android/app/release
+
+# ─── IDE / Editor ───
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# ─── Log Dosyaları ───
+*.log
+logs/
+
+# ─── Geçici Dosyalar ───
+*.tmp
+*.temp
+migrate_working_dir/
+.build/
+.buildlog/
+.history
+.svn/
+.swiftpm/
+.atom/
+
+# ─── Büyük Veri Dosyaları ───
+amazon_katalog.json
+*.catalog.json
+
+# ─── Node (varsa) ───
+node_modules/
+npm-debug.log*
